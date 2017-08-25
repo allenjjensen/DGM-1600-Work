@@ -1,1 +1,2 @@
 comm 1 pushing set up
+comm 2 learning is fun
