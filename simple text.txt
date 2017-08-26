@@ -1,2 +1,3 @@
 comm 1 pushing set up
 comm 2 learning is fun
+comm 3 doing stuffs
