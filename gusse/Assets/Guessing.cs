@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Guessing : MonoBehaviour
 {
-	int max = 100;
-	int min = 1;
-	int guess = 50;
+    private int max = 100;
+    private int min = 1;
+    private int guess;
 
+    public int counter;
 
 
 	// Use this for initialization
 	void Start () 
 	{
 
-
+        guess = Random.Range(min, max);
 
 		print ("welcome to number guesser");
 		print ("pick a number in your head");
@@ -34,6 +35,7 @@ public class Guessing : MonoBehaviour
 		{
 			min = guess; 
 			guess = (max + min) / 2;
+            counter--;
 			print ("is the number higher or lower then " + guess);
 
 
@@ -42,6 +44,7 @@ public class Guessing : MonoBehaviour
 		{
 			max = guess;
 			guess = (max + min) / 2;
+            counter--;
 			print ("is the number higher or lower then " + guess);
 
 		}
@@ -50,6 +53,13 @@ public class Guessing : MonoBehaviour
 			print (" HA! noob... I win.");
 		}
 
+        {  if (counter == 0)
+                
+                print("you win.... noob");    
+       
+        }
+
+            
 
 	}
 }
