@@ -1,0 +1,43 @@
+﻿If then statements allow for your code to make a choice based information. Else if = otherwise
+
+
+
+
+If(RoomTempereature > hotlimitTemperature)
+
+
+        (“the room is to hot”)
+Else if(RoomTempereature < ColdlimitTemperature)
+
+
+        (“the room is to cold”)
+Else 
+        (“the room is just right”)
+
+
+
+
+If ( stomachfullness > StomachCapacity)
+
+
+You’r going to throw up
+Otherwise
+
+
+Stomachfullness < Stomachcapacity
+
+
+        You are hungary 
+
+
+Otherwise
+
+
+You are full
+
+
+if(up)
+You are going up
+
+
+Else if you are falling
