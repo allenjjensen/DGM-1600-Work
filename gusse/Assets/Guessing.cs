@@ -30,34 +30,43 @@ public class Guessing : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		
-		if (Input.GetKeyDown(KeyCode.UpArrow))
-		{
-			min = guess; 
-			guess = (max + min) / 2;
+
+        if (counter == -1) {
+
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow)) {
+                print("you win");
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            min = guess;
+            guess = (max + min) / 2;
             counter--;
-			print ("is the number higher or lower then " + guess);
+            print("is the number higher or lower then " + guess);
 
 
-		}
-		if (Input.GetKeyDown (KeyCode.DownArrow)) 
-		{
-			max = guess;
-			guess = (max + min) / 2;
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            max = guess;
+            guess = (max + min) / 2;
             counter--;
-			print ("is the number higher or lower then " + guess);
+            print("is the number higher or lower then " + guess);
 
-		}
+        }
 		if (Input.GetKeyDown(KeyCode.Return))
 		{
 			print (" HA! noob... I win.");
 		}
 
-        {  if (counter == 0)
-                
-                print("you win.... noob");    
-       
+          if (counter == 0)
+        {
+
+            counter--;
         }
+       
+                
+        
 
             
 
