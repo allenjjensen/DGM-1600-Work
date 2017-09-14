@@ -8,8 +8,8 @@ public class Guessing : MonoBehaviour
 
     public Text textbox; 
 
-    private int max = 100;
-    private int min = 1;
+    public int max;
+    public int min;
     private int guess;
 
     public int counter;
@@ -34,14 +34,6 @@ public class Guessing : MonoBehaviour
 
 
 
-
-        print ("welcome to number guesser");
-		print ("pick a number in your head");
-		print (" The highest number you can pick is " + max);
-		print ("The loowest number you can pick is " + min);
-
-		print ("is the number higher or lower then " + guess);
-		print (" up arrow for higher, down for lower, enter for equal");
 		max = max + 1;
 	}
 	
@@ -53,6 +45,8 @@ public class Guessing : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow)) {
                 print("you win");
+
+                textbox.text=("you win");
             }
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -62,6 +56,7 @@ public class Guessing : MonoBehaviour
             counter--;
             print("is the number higher or lower then " + guess);
 
+            textbox.text=("is the number higher or lower then " + guess);
 
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -71,11 +66,14 @@ public class Guessing : MonoBehaviour
             counter--;
             print("is the number higher or lower then " + guess);
 
+            textbox.text= ("is the number higher or lower then " + guess);
         }
 		if (Input.GetKeyDown(KeyCode.Return))
 		{
 			print (" HA! noob... I win.");
-		}
+
+            textbox.text=(" HA! noob... I win.");
+        }
 
           if (counter == 0)
         {
