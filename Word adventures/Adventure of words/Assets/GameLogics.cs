@@ -259,9 +259,11 @@ public class GameLogics : MonoBehaviour
 
    void State_deadScreen() {
             textObject.text = "you have died!" +
-                    "\n Press C to start again or you can give up...";
-            if (Input.GetKeyDown(KeyCode.C)) { cellDoor = false; spring = false; rock = false; blanket = false; myState = States.deadScreen;
+                    "\n Press C to start again or you can give up..." +
+                    "\n press Esc or Return to quit";
+        if (Input.GetKeyDown(KeyCode.C)) { cellDoor = false; spring = false; rock = false; blanket = false; myState = States.deadScreen;
             myState = States.start; }
+        else if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit(); }
         }
 
     void State_outside() {
