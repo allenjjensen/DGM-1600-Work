@@ -3,23 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HP : MonoBehaviour {
+
     public int health;
 
-	// Use this for initialization
-	void Start () {
 
-    void OnCollisionEnter(Collision collision){
-            if (collision.relativeVelocity.magnitude >=1)
-                health - 1 ();
+    void OnCollisionEnter2D(Collision2D collision){
+
+        health--;
+
+        if ( health <= 0) { Destroy(this.gameObject);
+        }
+
         }
 
 
     }
 	
-	// Update is called once per frame
-	void Update () {
+	
     
         
 		
-	}
-}
+	
+
