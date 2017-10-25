@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  brickPictures: []
 --- !u!212 &212174853184088570
 SpriteRenderer:
   m_ObjectHideFlags: 1
