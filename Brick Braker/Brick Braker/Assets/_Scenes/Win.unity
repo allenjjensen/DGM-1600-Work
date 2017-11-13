@@ -415,9 +415,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Brick Braker
-
-'
+  m_Text: You Win!
 --- !u!222 &1240569289
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -874,7 +872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: Again
 --- !u!222 &1690289214
 CanvasRenderer:
   m_ObjectHideFlags: 0

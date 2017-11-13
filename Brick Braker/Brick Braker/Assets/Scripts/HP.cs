@@ -13,14 +13,14 @@ public class HP : MonoBehaviour {
        levelManager = FindObjectOfType<LevelManager>();
     }
 
-    void OnCollisionEnter2D(Collision2D collision){
+    void OnCollisionEnter2D(Collision2D collider){
 
         health--;
         count++;
         if (count > picture.Length -1) {
             count--;
         }
-
+        GetComponent <SpriteRenderer>().sprite = picture[count];
         if ( health <= 0) {
             LevelManager.brickCount--;
             levelManager.CheckBrickCount();

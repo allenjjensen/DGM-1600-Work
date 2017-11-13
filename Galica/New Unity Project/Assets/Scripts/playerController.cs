@@ -4,48 +4,47 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour {
 
+    public GameObject projectile;
+    public Transform shotPos;
+    public float shotForce;
+    public float moveSpeed;
+    private Rigidbody2D rb;
+    public float thrust;
+    
+    
+
+
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
 
 
 
 
-    // Use this for initialization
-  
 
     
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKey(KeyCode.W))
+    // Update is called once per frame
+    void Update () {
+    float h = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+    float v = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+
+    transform.Translate(new Vector3(h, v, 0f)); 
+       
+
+        if (Input.GetButtonUp("Fire1"))
         {
-            Vector3 position = this.transform.position;
-            position.y++;
-            this.transform.position = position;
-        }
-            
-
-        if (Input.GetKey(KeyCode.S)) {
-            Vector3 position = this.transform.position;
-            position.y--;
-            this.transform.position = position;
-        }
-           
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            Vector3 position = this.transform.position;
-            position.x--;
-            this.transform.position = position;
+            GameObject shot = Instantiate(projectile, shotPos.position, shotPos.rotation) as GameObject;
+            shot.GetComponent<Rigidbody2D>().AddForce(shotPos.up * shotForce);
         }
 
-        if (Input.GetKey(KeyCode.D)) {
-            Vector3 position = this.transform.position;
-            position.x++;
-            this.transform.position = position;
-        }
-           
-
-
+        Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg -90f;
+        transform.rotation = Quaternion.AngleAxis(angle, (Vector3.forward) );
+        //transform.rotation.z -= 90f;
+        
 
 
     }
