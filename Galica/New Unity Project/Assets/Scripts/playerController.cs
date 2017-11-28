@@ -11,14 +11,14 @@ public class playerController : MonoBehaviour {
     private Rigidbody2D rb;
     public float thrust;
     public ParticleSystem particles;
-    
+    private Rigidbody2D rigid;
     
 
 
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigid = GetComponent<Rigidbody2D>();
     }
 
 
@@ -37,7 +37,7 @@ public class playerController : MonoBehaviour {
             
 
         float h = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-    float v = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+        float v = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
 
 
         transform.Translate(new Vector3(h, v, 0f)); 
