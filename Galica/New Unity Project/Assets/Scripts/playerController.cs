@@ -7,7 +7,7 @@ public class playerController : MonoBehaviour {
     public GameObject projectile;
     public Transform shotPos;
     public float shotForce;
-    public float moveSpeed;
+    public float speed;
     private Rigidbody2D rb;
     public float thrust;
     public ParticleSystem particles;
@@ -16,31 +16,44 @@ public class playerController : MonoBehaviour {
 
 
 
+
+
+
     private void Start()
     {
-        rigid = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
 
+    void FixedUpdate()
+    {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
+        Vector3 movement = new Vector3(moveHorizontal, moveVertical, 0.0f);
 
+       // rb.AddForce(movement * speed);
+        rb.AddRelativeForce(movement * speed);
+    }
 
-    
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        coll.gameObject.GetComponent<Health>().IncrementHealth(-1);
+
+    }
+
     // Update is called once per frame
     void Update () {
 
-        if (Input.GetKey(KeyCode.W)){
+
+          if (Input.GetKey(KeyCode.W)){
            
-            particles.Emit(1);
+           particles.Emit(1);
         }
             
 
-        float h = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        float v = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-
-
-        transform.Translate(new Vector3(h, v, 0f)); 
+     
        
 
         if (Input.GetButtonUp("Fire1"))

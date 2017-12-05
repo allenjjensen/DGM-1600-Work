@@ -34,7 +34,7 @@ public class powerUp : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other) { 
         Debug.Log("We hit a powerup!");
-        
+        if (powerUpType == Type.SpeedBoosterAwesomePants) { }
        
 
         switch (powerUpType)
@@ -44,7 +44,7 @@ public class powerUp : MonoBehaviour {
             case Type.Shield:
                 break;
             case Type.SpeedBoosterAwesomePants:
-                other.GetComponent<playerController> ().moveSpeed *= 2;
+                other.GetComponent<playerController> ().speed *= 2;
                 break;
             default:
                 break;

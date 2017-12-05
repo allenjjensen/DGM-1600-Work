@@ -17,10 +17,17 @@ public class Meteor : MonoBehaviour {
         levelManager = FindObjectOfType<LevelManager>();
     }
 
-    
 
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        coll.gameObject.GetComponent<Health>().IncrementHealth(-1);
+   
+       
+ 
         
-
     }
+
+
+}
 
 
