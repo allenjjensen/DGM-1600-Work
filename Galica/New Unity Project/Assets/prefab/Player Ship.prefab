@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 50648509054989796}
   - component: {fileID: 60005948379403902}
   - component: {fileID: 114706625982185576}
+  - component: {fileID: 114582295072308252}
   m_Layer: 9
   m_Name: Player Ship
   m_TagString: Untagged
@@ -110,12 +111,12 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1573925002559962}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.5
   m_AngularDrag: 0.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -167,6 +168,26 @@ PolygonCollider2D:
       - {x: 0.19, y: -0.325}
       - {x: 0.32, y: -0.355}
       - {x: 0.39, y: -0.36499998}
+--- !u!114 &114582295072308252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1573925002559962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291b676ad89c6de42ba8be953b1b83d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  explosionEffect: {fileID: 1730531872329104, guid: 519a496e123434d4bb7b31a1852e045e,
+    type: 2}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114706625982185576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,7 +202,7 @@ MonoBehaviour:
   projectile: {fileID: 1945065234977890, guid: def89120ddfb18143bc9386942eded1e, type: 2}
   shotPos: {fileID: 4270115806287226}
   shotForce: 750
-  moveSpeed: 20
+  speed: 10
   thrust: 20
   particles: {fileID: 198006372096640566}
 --- !u!198 &198006372096640566

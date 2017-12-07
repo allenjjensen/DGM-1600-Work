@@ -13,12 +13,14 @@ public class Follow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 myPos = objectToFollow.position;
+        if (objectToFollow != null)
+        {
+            Vector3 myPos = objectToFollow.position;
 
-        myPos.z = zOffset;
+            myPos.z = zOffset;
 
-        gameObject.transform.position = myPos;
-
+            gameObject.transform.position = myPos;
+        }
 
     }
 }
