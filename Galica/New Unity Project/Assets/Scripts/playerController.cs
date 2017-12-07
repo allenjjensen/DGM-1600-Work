@@ -12,7 +12,7 @@ public class playerController : MonoBehaviour {
     public float thrust;
     public ParticleSystem particles;
     private Rigidbody2D rigid;
-    
+    public GameObject levelManager;
 
 
 
@@ -22,6 +22,8 @@ public class playerController : MonoBehaviour {
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        print(GetComponent<Health>().GetHealth());
     }
 
 

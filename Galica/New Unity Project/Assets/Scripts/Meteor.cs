@@ -6,7 +6,7 @@ public class Meteor : MonoBehaviour {
     public float startingSpin;
 
     
-    public Sprite[] picture;
+    
     private int count = 0;
     private LevelManager levelManager;
     
@@ -26,7 +26,7 @@ public class Meteor : MonoBehaviour {
  
         
     }
-
+    
 
 }
 
