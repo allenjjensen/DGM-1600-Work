@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10dc0e8715d0afe4bac845e0ec079b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpType: 2
+  powerUpType: 1
   images:
   - {fileID: 0}
 --- !u!212 &212492461421250736
