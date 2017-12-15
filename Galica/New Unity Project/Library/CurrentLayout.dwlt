@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 321}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_MinSize: {x: 102, y: 242}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 64
+  controlID: 10
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,7 +93,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 321}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_MinSize: {x: 817, y: 271}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 134
+  controlID: 100
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,9 +296,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -22.506506, y: 2.3464441, z: 15.875}
+    m_Target: {x: -91.86989, y: 8.344959, z: 15.875}
     speed: 2
-    m_Value: {x: -22.506506, y: 2.3464441, z: 15.875}
+    m_Value: {x: -91.86989, y: 8.344959, z: 15.875}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -323,16 +323,16 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: -1}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 62.1169
+    m_Target: 112.33876
     speed: 2
-    m_Value: 62.1169
+    m_Value: 112.33876
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
-  m_LastSceneViewRotation: {x: -0.14825143, y: -0.011274384, z: 0.0016925794, w: -0.988884}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -562,21 +562,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 7c23f9ff8023f9ff4c2ff9ffc041f9ffd26ef9ff7883f9ffaa89f9ff5c8bf9ff2e9bf9ffb69df9fffc9ef9ff4ea0f9ffc6aff9ffd8ddf9ff20dff9ff50faf9ff70f4faff124bfbff723cfcff6a41fcfff87afcff0afefcff6481fdffa882feffac82feffae82feffd684feffc495feffda96feffeebcfeff4edafeff38e6feff1afcffff00000000566e00007e6e0000286f00004e6f0000a46f000032700000647100006e7100006a720000287400000a830000e8880000668c0000
+    m_ExpandedIDs: a217ffff5618ffff4819ffff4c19ffff5019ffff5819ffff7219ffff3c5effffe8c4ffffc0c8ffff22deffffece1ffffc0e8ffff6eebffff1afcffff00000000a82f00004e30000020310000f634000052350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: ThrusterParti
-      m_OriginalName: ThrusterParti
+      m_Name: Music Manager
+      m_OriginalName: Music Manager
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -449668
+      m_UserData: 12414
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 4
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -634,7 +634,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0e260000
     m_LastClickedID: 9742
-    m_ExpandedIDs: 0000000028260000bc260000f8260000162700006c2700005c280000d0280000f6280000462900008a2a0000da2e0000
+    m_ExpandedIDs: 0000000028260000c0260000fc2600001a270000702700002828000060280000d4280000fc2800004e290000d4290000982a00008e2f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -662,18 +662,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000028260000bc260000f8260000162700006c270000242800005c280000d0280000f628000046290000cc2900008a2a0000da2e0000
+    m_ExpandedIDs: 0000000028260000c0260000fc2600001a270000702700002828000060280000d4280000fc2800004e290000d4290000982a00008e2f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Menu
-      m_OriginalName: Menu
+      m_Name: GameOver
+      m_OriginalName: GameOver
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10288
+      m_UserData: 9924
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0

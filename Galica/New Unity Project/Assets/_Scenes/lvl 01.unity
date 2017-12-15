@@ -2566,7 +2566,7 @@ GameObject:
   - component: {fileID: 337357129}
   - component: {fileID: 337357131}
   - component: {fileID: 337357128}
-  m_Layer: 12
+  m_Layer: 8
   m_Name: FinishLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2582,7 +2582,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 6.272538e-11, y: 0.1068528}
@@ -16363,11 +16363,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4409059899740050, guid: 1f97e7339be450f41846328ed6bb8e4d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -11.54
+      value: -13.1
       objectReference: {fileID: 0}
     - target: {fileID: 4409059899740050, guid: 1f97e7339be450f41846328ed6bb8e4d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.52
+      value: -3.3
       objectReference: {fileID: 0}
     - target: {fileID: 4409059899740050, guid: 1f97e7339be450f41846328ed6bb8e4d, type: 2}
       propertyPath: m_LocalPosition.z
