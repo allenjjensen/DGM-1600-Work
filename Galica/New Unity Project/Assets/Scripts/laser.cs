@@ -10,14 +10,14 @@ public class laser : MonoBehaviour
     public float lifetime;
     public float Speed;
     public int damage;
-    public AudioSource audio;
+    
 
 
 
     // Use this for initialization
     void Start()
     {
-        ///audio.pitch = Random.Range(1f, 1.5f);
+       
 
     }
 
@@ -34,8 +34,8 @@ public class laser : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other){
-        other.GetComponent<Health>().IncrementHealth(damage); 
-        Destroy(gameObject);
-        
+        other.GetComponent<Health>().IncrementHealth(damage);
+        Destroy(this.gameObject);
+
     }
 }

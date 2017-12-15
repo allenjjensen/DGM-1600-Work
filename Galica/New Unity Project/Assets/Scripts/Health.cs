@@ -59,16 +59,20 @@ public class Health : MonoBehaviour {
 
     private void ShowHearts()
     {
-        // turns all hearts off
-        for (int i = 0; i < hearts.Length; i++)
+        if (MePlayer())
         {
-            hearts[i].SetActive(false);
-        }
-        // turns hearts on by health 
-        for (int i = 0; i < health; i++)
-        {
+            // turns all hearts off
+            for (int i = 0; i < hearts.Length; i++)
+            {
+                hearts[i].SetActive(false);
+            }
+            // turns hearts on by health 
+            for (int i = 0; i < health; i++)
+            {
 
-            hearts[i].SetActive(true);
+                hearts[i].SetActive(true);
+
+            }
         }
     }
 

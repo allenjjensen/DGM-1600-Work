@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class powerUp : MonoBehaviour {
 
-    public enum Type { fancyShot, Shield, SpeedBoosterAwesomePants};
+    public enum Type { HpUp, SpeedBoosterAwesomePants};
     public Type powerUpType;
     public Sprite[] images;
     
@@ -14,10 +14,8 @@ public class powerUp : MonoBehaviour {
 	void Start () {
         switch (powerUpType)
         {
-            case Type.fancyShot:
-                gameObject.GetComponent<SpriteRenderer>().sprite = images[0]; 
-                break;
-            case Type.Shield:
+            
+            case Type.HpUp:
                 break;
             case Type.SpeedBoosterAwesomePants:
                 break;
@@ -33,15 +31,14 @@ public class powerUp : MonoBehaviour {
 	}
 
     void OnTriggerEnter2D(Collider2D other) { 
-        Debug.Log("We hit a powerup!");
         if (powerUpType == Type.SpeedBoosterAwesomePants) { }
+        if(powerUpType == Type.HpUp) { }
        
 
         switch (powerUpType)
         {
-            case Type.fancyShot:
-                break;
-            case Type.Shield:
+            case Type.HpUp:
+                other.gameObject.GetComponent<Health>().IncrementHealth(+1);
                 break;
             case Type.SpeedBoosterAwesomePants:
                 other.GetComponent<playerController> ().speed *= 2;

@@ -13,6 +13,7 @@ public class playerController : MonoBehaviour {
     public ParticleSystem particles;
     private Rigidbody2D rigid;
     public GameObject levelManager;
+    
 
 
 
@@ -22,8 +23,9 @@ public class playerController : MonoBehaviour {
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
 
-        print(GetComponent<Health>().GetHealth());
+
     }
 
 
@@ -37,12 +39,6 @@ public class playerController : MonoBehaviour {
 
        // rb.AddForce(movement * speed);
         rb.AddRelativeForce(movement * speed);
-    }
-
-    private void OnCollisionEnter2D(Collision2D coll)
-    {
-        coll.gameObject.GetComponent<Health>().IncrementHealth(-1);
-
     }
 
     // Update is called once per frame

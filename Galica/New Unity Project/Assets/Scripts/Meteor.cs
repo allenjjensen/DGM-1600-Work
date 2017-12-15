@@ -7,7 +7,7 @@ public class Meteor : MonoBehaviour {
 
     
     
-    private int count = 0;
+   
     private LevelManager levelManager;
     
 

@@ -183,11 +183,26 @@ MonoBehaviour:
   explosionEffect: {fileID: 1730531872329104, guid: 519a496e123434d4bb7b31a1852e045e,
     type: 2}
   hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
+  - {fileID: 1766654938217102, guid: e81c40d83f4dd4a419c07518b1ee137a, type: 2}
 --- !u!114 &114706625982185576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,6 +220,7 @@ MonoBehaviour:
   speed: 10
   thrust: 20
   particles: {fileID: 198006372096640566}
+  levelManager: {fileID: 0}
 --- !u!198 &198006372096640566
 ParticleSystem:
   m_ObjectHideFlags: 1
